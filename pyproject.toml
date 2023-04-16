@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "text-summarization-as-service"
+version = "0.1.0"
+description = "Text Summarization Service"
+authors = ["Mihir Kavatkar <mkavatkar157@gmail.com>"]
+readme = "README.md"
+packages = [{include = "text_summarization_as_service"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.95.1"
+uvicorn = {extras = ["standard"], version = "^0.21.1"}
+openai = "^0.27.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
